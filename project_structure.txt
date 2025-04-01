@@ -1,0 +1,39 @@
+v/
+├── compiler/                 # V compiler implementation
+│   ├── parser/              # Syntax parser
+│   ├── lexer/               # Token lexer
+│   ├── ast/                 # Abstract Syntax Tree
+│   └── codegen/             # Code generation
+├── std/                     # Standard library
+│   ├── http/               # HTTP server and client
+│   ├── db/                 # Database operations
+│   ├── security/           # Security features
+│   ├── cache/              # Caching system
+│   ├── queue/              # Message queue
+│   ├── websocket/          # WebSocket support
+│   ├── monitoring/         # Monitoring tools
+│   ├── crypto/             # Cryptography
+│   ├── json/               # JSON handling
+│   └── time/               # Time operations
+├── tools/                  # Development tools
+│   ├── vpm/               # Package manager
+│   ├── vfmt/              # Code formatter
+│   ├── vdoc/              # Documentation generator
+│   └── vtest/             # Testing framework
+├── examples/              # Example programs
+│   ├── basic/            # Basic syntax examples
+│   ├── web/              # Web development examples
+│   ├── database/         # Database examples
+│   └── cloud/            # Cloud integration examples
+├── docs/                 # Documentation
+│   ├── language/         # Language specification
+│   ├── std/             # Standard library docs
+│   └── guides/          # User guides
+├── tests/               # Test suite
+│   ├── compiler/       # Compiler tests
+│   ├── std/           # Standard library tests
+│   └── integration/   # Integration tests
+├── scripts/            # Build and utility scripts
+├── vpm.json           # Package manager config
+├── LICENSE            # MIT License
+└── README.md          # Project documentation 

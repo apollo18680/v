@@ -1,0 +1,174 @@
+{
+    "name": "v",
+    "version": "1.0.0",
+    "description": "A modern backend programming language",
+    "author": "V Team",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/vlang/v"
+    },
+    "dependencies": {
+        "std": {
+            "version": "1.0.0",
+            "features": [
+                "http",
+                "json",
+                "time",
+                "prometheus",
+                "crypto",
+                "net",
+                "os",
+                "fmt",
+                "strconv",
+                "regexp",
+                "encoding",
+                "testing",
+                "runtime",
+                "sync",
+                "context",
+                "errors",
+                "io",
+                "bufio",
+                "path",
+                "url",
+                "math",
+                "rand",
+                "sort",
+                "strings",
+                "unicode"
+            ]
+        },
+        "database": {
+            "version": "1.0.0",
+            "drivers": [
+                "postgres",
+                "mysql",
+                "sqlite",
+                "redis",
+                "mongodb",
+                "cassandra",
+                "elasticsearch"
+            ]
+        },
+        "api": {
+            "version": "1.0.0",
+            "protocols": [
+                "rest",
+                "graphql",
+                "grpc",
+                "websocket",
+                "graphql-ws",
+                "openapi"
+            ]
+        },
+        "security": {
+            "version": "1.0.0",
+            "features": [
+                "jwt",
+                "oauth2",
+                "saml",
+                "ldap",
+                "rbac",
+                "rate-limit",
+                "cors",
+                "xss",
+                "csrf",
+                "csp",
+                "input-validation",
+                "encryption",
+                "hashing"
+            ]
+        },
+        "monitoring": {
+            "version": "1.0.0",
+            "tools": [
+                "prometheus",
+                "grafana",
+                "jaeger",
+                "opentelemetry",
+                "sentry",
+                "datadog"
+            ]
+        },
+        "testing": {
+            "version": "1.0.0",
+            "frameworks": [
+                "unit",
+                "integration",
+                "e2e",
+                "benchmark",
+                "fuzzing",
+                "property"
+            ]
+        },
+        "deployment": {
+            "version": "1.0.0",
+            "platforms": [
+                "kubernetes",
+                "docker",
+                "aws",
+                "gcp",
+                "azure",
+                "digitalocean"
+            ]
+        }
+    },
+    "devDependencies": {
+        "tools": {
+            "version": "1.0.0",
+            "features": [
+                "vfmt",
+                "vvet",
+                "vtest",
+                "vdoc",
+                "vprof",
+                "vdebug",
+                "vls",
+                "vup",
+                "vsh"
+            ]
+        },
+        "linters": {
+            "version": "1.0.0",
+            "tools": [
+                "vfmt",
+                "vvet",
+                "vtest",
+                "vprof"
+            ]
+        }
+    },
+    "scripts": {
+        "build": "v build",
+        "test": "v test",
+        "fmt": "v fmt",
+        "vet": "v vet",
+        "doc": "v doc",
+        "profile": "v profile",
+        "debug": "v debug",
+        "up": "v up",
+        "install": "v install",
+        "update": "v update"
+    },
+    "config": {
+        "compiler": {
+            "optimization": "O2",
+            "debug": false,
+            "race": false,
+            "sanitize": false,
+            "coverage": false
+        },
+        "testing": {
+            "timeout": "30s",
+            "parallel": true,
+            "shuffle": true,
+            "coverage": true
+        },
+        "linting": {
+            "strict": true,
+            "warnings": true,
+            "errors": true
+        }
+    }
+} 
